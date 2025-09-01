@@ -1,0 +1,15 @@
+{
+	"name": "LS_BLOB_STORAGE",
+	"properties": {
+		"annotations": [],
+		"type": "AzureBlobStorage",
+		"typeProperties": {
+			"serviceEndpoint": "https://saleasyslumzi.blob.core.windows.net/",
+			"accountKind": "StorageV2"
+		},
+		"connectVia": {
+			"referenceName": "AzureIR-NorthEurope",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}
