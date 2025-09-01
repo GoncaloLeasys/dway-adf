@@ -1,0 +1,24 @@
+{
+	"name": "LS_HTTP_MZI_API_QUA",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"description": "Linked service for MZI API in Quality Env",
+		"annotations": [],
+		"type": "HttpServer",
+		"typeProperties": {
+			"url": "https://appserv-leasyslu-mzi-api-qua-bmaadfadgjenbkdb.northeurope-01.azurewebsites.net/",
+			"enableServerCertificateValidation": true,
+			"authenticationType": "Anonymous",
+			"authHeaders": {
+				"X-API-Key": {
+					"type": "SecureString",
+					"value": "**********"
+				}
+			}
+		},
+		"connectVia": {
+			"referenceName": "AzureIR-NorthEurope",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}
