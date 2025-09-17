@@ -1,0 +1,24 @@
+{
+	"name": "LS_HTTP_MZI_API",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"description": "Linked service to access the MZI API",
+		"annotations": [],
+		"type": "HttpServer",
+		"typeProperties": {
+			"url": "https://appserv-leasyslu-mzi-api-prd-azgeawbfc0dbbres.northeurope-01.azurewebsites.net/",
+			"enableServerCertificateValidation": true,
+			"authenticationType": "Anonymous",
+			"authHeaders": {
+				"X-API-Key": {
+					"type": "SecureString",
+					"value": "**********"
+				}
+			}
+		},
+		"connectVia": {
+			"referenceName": "AzureIR-NorthEurope",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}
