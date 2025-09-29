@@ -50,7 +50,7 @@
 						"type": "DatasetReference",
 						"parameters": {
 							"FileName": {
-								"value": "@replace(\n    replace(concat('contracts_', formatDateTime(utcNow(),'yyyyMMdd'), '.csv'), '\\r', ''),\n'\\n','')\n",
+								"value": "@concat('contracts_', formatDateTime(utcNow(), 'yyyyMMdd'), '.csv')\n",
 								"type": "Expression"
 							}
 						}
